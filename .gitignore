@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Puppeteer downloads (optional)
+.puppeteer/
+
+# PDF files (if dynamically generated and not needed in git)
+Repayments/*.pdf
+
+# Build folders (optional)
+dist/
+build/

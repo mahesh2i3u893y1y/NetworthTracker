@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      font-size: 14px;
+      background-color: #f5f5f5;
+    }
+    .receipt-container {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .logo {
+      height: 60px;
+      margin-bottom: 10px;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    .info-table td, .info-table th {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    .info-table th {
+      background-color: #f0f0f0;
+    }
+    .thank-you {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="receipt-container">
+    <div class="header">
+      <img class="logo" src="https://networthtracker.in/static/media/nwt-logo-full.68ed8809e9f408b9c7e150305c7ee507.svg" alt="Logo" />
+      <div class="title">Repayment Receipt</div>
+    </div>
+
+    <table class="info-table">
+      <tr>
+        <th>Shopkeeper</th>
+        <td>{{shopkeeperName}} ({{shopkeeperEmail}})</td>
+      </tr>
+      <tr>
+        <th>Customer</th>
+        <td>{{customerName}}, {{customerPhone}}, {{customerAddress}}</td>
+      </tr>
+      <tr>
+        <th>Item Description</th>
+        <td>{{itemDescription}}</td>
+      </tr>
+      <tr>
+        <th>Loan Amount</th>
+        <td>₹{{loanAmount}}</td>
+      </tr>
+      <tr>
+        <th>Amount Paid</th>
+        <td>₹{{amountPaid}}</td>
+      </tr>
+      <tr>
+        <th>Remaining Balance</th>
+        <td>₹{{remainingAmount}}</td>
+      </tr>
+      <tr>
+        <th>Payment Date</th>
+        <td>{{paymentDate}}</td>
+      </tr>
+    </table>
+
+    <div class="thank-you">Thank you for your payment!</div>
+  </div>
+</body>
+</html>

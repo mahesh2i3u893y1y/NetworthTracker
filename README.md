@@ -6,6 +6,13 @@ and generate downloadable receipts — all through a secure, user-specific API s
 
 ---
 
+credentails to test api's 
+
+{
+  "email":"rakesh@gmail.com",
+  "password":"Rakesh@123"
+}
+
 ## 🚀 Features
 
 ### ✅ User Authentication
@@ -48,6 +55,29 @@ and generate downloadable receipts — all through a secure, user-specific API s
 - HTML/CSS for receipt template
 
 
+
+API's 
+http://localhost:3000/register   --- To register user mean ShopKeeper 
+http://localhost:3000/login 
+http://localhost:3000/logout 
+
+
+http://localhost:3000/customer    -- To create customer who is taking the loan from shopkeeper  
+http://localhost:3000/getallcustomers  -- To get all the customers 
+http://localhost:3000/customer/6816605216054dece72841ea        -- edit customer
+http://localhost:3000/customer/6816605216054dece72841ea         -- delete customer 
+
+
+
+http://localhost:3000/customer/loan    ---    create Loan  approvall 
+http://localhost:3000/customer/loan/68174daf41b2ccab0d8b58d6      --- loan detials  GET
+http://localhost:3000/coustomer/loan/repayment/68174daf41b2ccab0d8b58d6     --- loan repayment 
+
+http://localhost:3000/loan/repayments/      TO get all the loans given by the shopkeeper
+
+
+
+http://localhost:3000/summary      -- To get summary of the loans 
 
 
 

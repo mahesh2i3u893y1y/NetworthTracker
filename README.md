@@ -81,5 +81,16 @@ http://localhost:3000/summary      -- To get summary of the loans
 
 
 
+Reciept of the pdf will be given 
+
+
+![Screenshot 2025-05-04 193223](https://github.com/user-attachments/assets/1b934454-c219-4d6b-9ec3-de1dd0cc1cd3)  
+
+
+this is how it look like if you download the receipt
+
+
+
+
 
 

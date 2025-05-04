@@ -29,7 +29,7 @@ and generate downloadable receipts — all through a secure, user-specific API s
 
 ### 📊 Summary & Alerts
 - `/summary`: Total loaned, total collected, overdue amount, average repayment time
-- `/overdue`: List of customers/loans that are overdue
+
 
 ### 📄 PDF Receipt Generator
 - Generate a professional PDF receipt for any repayment

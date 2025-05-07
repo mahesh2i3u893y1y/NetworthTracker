@@ -4,7 +4,7 @@ const {authMiddleWare} = require("../middlewares/auth")
 const loan = require('../models/loan');
 const customer = require('../models/customer');
 
-// POST /loans – Create a new loan
+// POST /loans 
 loanRouter.post('/customer/loan', authMiddleWare, async (req, res) => {
   const {
     customerId,
@@ -12,19 +12,19 @@ loanRouter.post('/customer/loan', authMiddleWare, async (req, res) => {
     loanAmount,
     issueDate,
     dueDate,
-    frequency, // 'bi-weekly' or 'monthly'
+    frequency, 
     interestPercent,
     graceDays
   } = req.body;
 
-  // Validate required fields
+  
   if (!customerId || !itemDescription || !loanAmount || !issueDate || !dueDate || !frequency) {
     return res.status(400).json({ message: 'Missing required loan fields' });
   }
 
 
   try {
-    // Ensure customer belongs to this shopkeeper
+  
     const Customer = await customer.findOne({ _id: customerId, shopkeeperId: req.user._id });
     if(loanAmount > Customer.creditLimit) return res.status(404).json({message:"Loan amount is greater than your credit limit"})
 

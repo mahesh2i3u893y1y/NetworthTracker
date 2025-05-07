@@ -14,12 +14,12 @@ summaryRouter.get('/summary', authMiddleWare, async (req, res) => {
     const totalLoaned = loans.reduce((sum, loan) => sum + loan.loanAmount, 0);
     const totalCollected = repayments.reduce((sum, r) => sum + r.amount, 0);
 
-    // Overdue amount
+    
     const today = new Date();
     const overdueLoans = loans.filter(loan => loan.dueDate < today && loan.remainingAmount > 0);
     const overdueAmount = overdueLoans.reduce((sum, loan) => sum + loan.remainingAmount, 0);
 
-    // Average repayment time (only for fully paid loans)
+   
     const paidLoans = loans.filter(loan => loan.status === 'paid');
     let totalDays = 0;
     let count = 0;
